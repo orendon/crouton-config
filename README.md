@@ -26,7 +26,7 @@ Steps
 ### 2. Clone this github project into $HOME/dotfiles:
 
 ```sudo apt-get install -y git```
-```git clone https://github.com/aaronhalford/s3dotfiles $HOME/dotfiles```
+```git clone https://github.com/aaronhalford/crouton-config```
 
 ### 3. Run the setup scripts in this order:
 
