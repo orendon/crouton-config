@@ -1,12 +1,16 @@
-S3-Config
-===========
+Crouton-Config
+==============
 
-S3-Config contains scripts for configuring a new chroot on a Samsung S3 Chromebook. This repo does not include dotfiles and replaces the obsolete s3dotfiles repository.
+Crouton-Config contains scripts for configuring a new crouton install.
+
+* Does not include dotfiles.
+* Installed applications based on ARM for S3 Chromebook.
+* Replaces the obsolete s3dotfiles repository.
 
 Requirements
 ------------
 
-* Samsung S3 Chromebook
+* Chromebook
 * Command line ablility
 * About 1 hour of your time
 
@@ -37,7 +41,7 @@ Read and do the steps in ```04-setup-xfce-guide.md```
 
 ### 5. Optional Node and Rails installer
 
-If you are not working on code remotely, you can install a functional version of Ruby on Rails and Node with `99-optional-setup-node-and-rails.sh`. Take a coffee break because the S3's ARM processor will take 20+ minutes to compile node and ruby from source.
+Install a functional version of Ruby on Rails and Node with `99-optional-setup-node-and-rails.sh`. Take a coffee break because the S3's ARM processor will take 20+ minutes to compile node and ruby from source.
 
 Improvement
 -----------
