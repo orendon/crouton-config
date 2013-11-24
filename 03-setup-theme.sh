@@ -38,5 +38,11 @@ fancy_echo "Installing Faenza Icons..."
 mkdir -p ~/.icons && cd ~/.icons && wget https://launchpad.net/~tiheum/+archive/equinox/+files/faenza-icon-theme_1.3.1.tar.gz && tar -zxvf faenza-icon-theme_1.3.1.tar.gz && cd .. && cp -a ~/.icons/faenza-icon-theme-1.3/Faenza* ~/.icons/
 cd $HOME
 
+### DockbarX
+sudo add-apt-repository -y ppa:dockbar-main/ppa
+sudo apt-get update
+sudo apt-get install -y dockbarx
+sudo apt-get install -y dockbarx-themes-extra
+
 ### Goodbye
 fancy_echo "Finished."
