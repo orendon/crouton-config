@@ -30,6 +30,7 @@ sudo apt-get -y upgrade
 
 ### General Applications
 fancy_echo "Installing command line applications..."
+sudo apt-get install -y ack-grep
 sudo apt-get install -y android-tools-adb
 sudo apt-get install -y android-tools-fastboot
 sudo apt-get install -y cmatrix
@@ -54,6 +55,7 @@ sudo apt-get install -y nmap
 sudo apt-get install -y nmon
 sudo apt-get install -y pdftk
 sudo apt-get install -y pv
+sudo apt-get install -y silversearcher-ag
 sudo apt-get install -y slurm
 sudo apt-get install -y tmux
 sudo apt-get install -y tree
