@@ -63,7 +63,7 @@ sudo apt-get install -y vim
 sudo apt-get install -y vnstat
 sudo apt-get install -y watch
 sudo apt-get install -y whois
-sudo apt-get install -y xclip
+sudo apt-get install -y xsel
 sudo apt-get install -y youtube-dl
 
 fancy_echo "Installing small gui applications..."
