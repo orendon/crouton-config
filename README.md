@@ -19,27 +19,25 @@ Steps
 
 ### 1. Install Crouton with 13.10 and XFCE
 
-[https://github.com/dnschneid/crouton](https://github.com/dnschneid/crouton)
-
-```sudo sh -e ~/Downloads/crouton -r saucy -t xfce```
+* [https://github.com/dnschneid/crouton](https://github.com/dnschneid/crouton)
+* `sudo sh -e ~/Downloads/crouton -r saucy -t xfce`
 
 ### 2. Clone this github project into $HOME/dotfiles:
 
-```sudo apt-get install -y git```
-```git clone https://github.com/aaronhalford/crouton-config```
+* `sudo apt-get install -y git`
+* `git clone https://github.com/aaronhalford/crouton-config`
 
 ### 3. Run the setup scripts in this order:
 
-* ```./01-setup-core.sh```
+* `./01-setup-core.sh`
 * Log out and back in to enable zsh
-* ```./02-setup-apps.sh```
-* ```./03-setup-theme.sh```
+* `./02-setup-apps.sh`
+* `./03-setup-theme.sh`
+* `./04-setup-xfce.sh`
 
-### 4. Setup XFCE
+### 5. Optionals
 
-Read and do the steps in ```04-setup-xfce-guide.md```
-
-### 5. Optional Node and Rails installer
+Install awscli and gcutil tools with `98-optional-setup-awscli-gcutil.sh`. This will require authorization.
 
 Install a functional version of Ruby on Rails and Node with `99-optional-setup-node-and-rails.sh`. Take a coffee break because the S3's ARM processor will take 20+ minutes to compile node and ruby from source.
 
