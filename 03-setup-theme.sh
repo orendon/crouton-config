@@ -41,11 +41,5 @@ cd $HOME
 ### Install Ubuntu Font Family
 sudo apt-get install ttf-ubuntu-font-family
 
-### DockbarX
-sudo add-apt-repository -y ppa:dockbar-main/ppa
-sudo apt-get update
-sudo apt-get install -y dockbarx
-sudo apt-get install -y dockbarx-themes-extra
-
 ### Goodbye
 fancy_echo "Finished."

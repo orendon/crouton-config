@@ -1,6 +1,10 @@
 #!/usr/bin/env zsh
 ## This script will install node and ruby on rails.to your Samsung S3 Chromebook
-## If you are developing remotely on a web server ignore this file.
+
+### fancy_echo()
+fancy_echo() {
+  printf "\n%b\n" "$1"
+}
 
 ### Node.js
 ### ARM bug fix uses --without-snapshot for install

@@ -50,11 +50,13 @@ sudo apt-get install -y locate
 sudo apt-get install -y lshw
 sudo apt-get install -y lsof
 sudo apt-get install -y nano
+sudo apt-get install -y newsbeuter
 sudo apt-get install -y ncdu
 sudo apt-get install -y nmap
 sudo apt-get install -y nmon
 sudo apt-get install -y pdftk
 sudo apt-get install -y pv
+sudo apt-get install -y rtorrent
 sudo apt-get install -y silversearcher-ag
 sudo apt-get install -y slurm
 sudo apt-get install -y tmux
@@ -68,20 +70,13 @@ sudo apt-get install -y youtube-dl
 
 fancy_echo "Installing small gui applications..."
 sudo apt-get install -y chromium-browser
-sudo apt-get install -y deluge
-sudo apt-get install -y fbreader
 sudo apt-get install -y firefox
-sudo apt-get install -y gedit
 sudo apt-get install -y keepassx
-sudo apt-get install -y klavaro
-sudo apt-get install -y liferea
-sudo apt-get install -y mupdf
-sudo apt-get install -y typecatcher
 
 fancy_echo "Installing large gui applications..."
-sudo apt-get install -y gimp
-sudo apt-get install -y inkscape
-sudo apt-get install -y libreoffice
+# sudo apt-get install -y gimp
+# sudo apt-get install -y inkscape
+# sudo apt-get install -y libreoffice
 
 ### Oh-My-ZSH
 fancy_echo "Installing oh my zsh..."
@@ -89,23 +84,6 @@ wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - 
 
 fancy_echo "Reloading zshrc..."
 source ~/.zshrc
-
-### awscli
-fancy_echo "Installing Amazon Web Services command line tools (awscli) via pip..."
-sudo apt-get install -y python-pip
-sudo pip install awscli
-
-### Dungeon Crawl Stone Soup
-fancy_echo "Adding Dungeon Crawl Stone Soup deb to /etc/apt/sources.list..."
-#sudo echo 'deb http://crawl.develz.org/debian crawl 0.13' >> /etc/apt/sources.list
-echo "deb http://crawl.develz.org/debian crawl 0.13" | sudo tee -a /etc/apt/sources.list
-
-fancy_echo "Installing Dungeon Crawl Stone Soup signing key..."
-wget http://crawl.develz.org/debian/pubkey -O - | sudo apt-key add -
-
-fancy_echo "Updating sources and installing crawl (ascii version)..."
-sudo apt-get update
-sudo apt-get install -y crawl
 
 ### goodbye
 fancy_echo "Finished."

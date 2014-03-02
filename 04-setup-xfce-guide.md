@@ -89,32 +89,6 @@ Use the  "Button Layout" option in ```Settings > Window Manager > Style``` to sw
 
 Set to Faenza
 
-### Configure DockbarX
-
-```Applications > Accessories > DockX```
-
-DockbarX loads a Unity style dock by default.
-
-```Applications > Accessories > DockbarX Preferences > Dock```
-
-Edit this value untill your dock icons aren't blurry.
-
-* Size = 42
-
-```Applications > Accessories > DockbarX Preferences > Dock``` 
-
-For a OSX Style dock: 
-
-* Type = Centered
-* Postion = Bottom
-* Behavior = Panel
-* Size = 42
-* Dock Theme = Glass Dock
-
-```Applications > Accessories > DockbarX Preferences > Appearance```
-
-* Icons = DockXYZ
-
 ### XFCE Panel
 
 Create a small, transparent panel for displaying the current battery percentage.
