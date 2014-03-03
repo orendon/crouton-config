@@ -57,8 +57,8 @@ xfconf-query -c xfwm4 -p /general/cycle_workspaces -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/mousewheel_rollup -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/stroll_workspaces -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/theme -n -t string -s Numix
-xfconf-query -c xfwm4 -p /general/title-alignment -n -t string -s center
-xfconf-query -c xfwm4 -p /general/title-font -n -t string -s "Ubuntu 10"
+xfconf-query -c xfwm4 -p /general/title_alignment -n -t string -s center
+xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Ubuntu 10"
 xfconf-query -c xfwm4 -p /general/workspace_count -n -t int -s 4
 xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s true
 
