@@ -1,11 +1,6 @@
 #!/usr/bin/env zsh
 ## This script will setup the xfce environment so you don't have to waste time navigating the xfce settings menu.
 
-### fancy_echo()
-fancy_echo() {
-  printf "\n%b\n" "$1"
-}
-
 # Mouse
 xfconf-query -c pointers -p /Xephyr_virtual_mouse/ReverseScrolling -n -t bool -s true
 
@@ -20,7 +15,7 @@ xfconf-query -c xfce4-panel -p /panels/panel-1/length -n -t int -s 100
 ## xfce4-panel -r
 ## xfconf-query -c xfce4-panel -p /panels/panel-1/plugin-ids
 
-xfconf-query -c xfce4-panel -p /panels/panel-1/position -n -t string -s p=6;x=0;y=0
+xfconf-query -c xfce4-panel -p /panels/panel-1/position -n -t string -s "p=6;x=0;y=0"
 xfconf-query -c xfce4-panel -p /panels/panel-1/position-locked -n -t bool -s true
 xfconf-query -c xfce4-panel -p /panels/panel-1/size -n -t int -s 16
 
@@ -64,8 +59,8 @@ xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s true
 
 # Xsettings
 xfconf-query -c xsettings -p /Gtk/FontName -n -t string -s "Ubuntu 13"
-xfconf-query -c xsettings -p /Gtk/Menuimages -n -t string -s true
-xfconf-query -c xsettings -p /Gtk/IconSizes -n -t int -s 32
+xfconf-query -c xsettings -p /Gtk/MenuImages -n -t bool -s true
+xfconf-query -c xsettings -p /Gtk/IconSizes -n -t string -s 3
 xfconf-query -c xsettings -p /Gtk/ToolbarIconSize -n -t int -s 3
 xfconf-query -c xsettings -p /Gtk/ToolbarStyle -n -t string -s icons
 xfconf-query -c xsettings -p /Net/IconThemeName -n -t string -s Faenza-Ambiance

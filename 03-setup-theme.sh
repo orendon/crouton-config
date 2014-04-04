@@ -1,13 +1,7 @@
 #!/usr/bin/env zsh
 ## This script configures optional environment settings and themes.
 
-### fancy_echo()
-fancy_echo() {
-  printf "\n%b\n" "$1"
-}
-
 ### XFCE4 Terminal Colorscheme
-fancy_echo "Installing base16-solarized-dark colorscheme for xfce4 terminal..."
 if [[ ! -d "$HOME/.config/xfce4/terminal" ]]; then
   mkdir -p $HOME/.config/xfce4/terminal
 fi
@@ -16,7 +10,6 @@ mv $HOME/tmp/base16-xfce4-terminal/* $HOME/.config/xfce4/terminal
 cp $HOME/.config/xfce4/terminal/base16-solarized.dark.terminalrc $HOME/.config/xfce4/terminal/terminalrc
 
 ### Terminal Font Fix (Powerline, Airline, and ZSH themes need this!)
-fancy_echo "Installing powerline corrected font for symbols..."
 if [[ ! -d "$HOME/.fonts" ]]; then
   mkdir -p $HOME/.fonts/
 fi
@@ -34,7 +27,6 @@ if [[ -f "10-powerline-symbols.conf" ]]; then
 fi
 
 ### Faenza Icons
-fancy_echo "Installing Faenza Icons..."
 mkdir -p ~/.icons && cd ~/.icons && wget https://launchpad.net/~tiheum/+archive/equinox/+files/faenza-icon-theme_1.3.1.tar.gz && tar -zxvf faenza-icon-theme_1.3.1.tar.gz && cd .. && cp -a ~/.icons/faenza-icon-theme-1.3/Faenza* ~/.icons/
 cd $HOME
 
@@ -42,4 +34,4 @@ cd $HOME
 sudo apt-get install ttf-ubuntu-font-family
 
 ### Goodbye
-fancy_echo "Finished."
+echo "Finished."

@@ -1,27 +1,17 @@
 #!/bin/sh
 ## This script will install zsh and prerequisites.
 
-### fancy_echo()
-fancy_echo() {
-  printf "\n%b\n" "$1"
-}
-
 ### Prerequisites
-fancy_echo "Updating application sources..."
 sudo apt-get update
-
-fancy_echo "Installing wget..."
 sudo apt-get install -y wget
-
-fancy_echo "Installing curl..."
 sudo apt-get install -y curl
-
-fancy_echo "Installing zsh..."
+sudo apt-get install -y build-essential
 sudo apt-get install -y zsh
 
-fancy_echo "Changing your shell to zsh..."
+### Bash is ok, ZSH is better.
+echo "Changing your shell to ZSH"
 chsh -s `which zsh`
 
 ### Goodbye
-fancy_echo "Your shell will now restart to apply changes."
+echo "Your shell will now restart to apply changes."
 exec `which zsh` -l

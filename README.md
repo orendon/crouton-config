@@ -35,13 +35,3 @@ Steps
 * `./03-setup-theme.sh`
 * `./04-setup-xfce.sh`
 
-### 5. Optionals
-
-Install awscli and gcutil tools with `98-optional-setup-awscli-gcutil.sh`. This will require authorization.
-
-Install a functional version of Ruby on Rails and Node with `99-optional-setup-node-and-rails.sh`. Take a coffee break because the S3's ARM processor will take 20+ minutes to compile node and ruby from source.
-
-Improvement
------------
-
-This project was cobbled together after one too many delete-chroot commands. It certainly can be improved so don't be shy about making pull requests or forking the project for your own use.
