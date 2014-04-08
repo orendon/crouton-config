@@ -1,5 +1,5 @@
 #!/usr/bin/env zsh
-## This script will setup the xfce environment so you don't have to waste time navigating the xfce settings menu.
+## This script will setup most of the xfce environment so you don't have to waste time navigating the xfce settings menu
 
 # Mouse
 xfconf-query -c pointers -p /Xephyr_virtual_mouse/ReverseScrolling -n -t bool -s true
@@ -7,13 +7,6 @@ xfconf-query -c pointers -p /Xephyr_virtual_mouse/ReverseScrolling -n -t bool -s
 # Top Panel
 xfconf-query -c xfce4-panel -p /panels/panel-1/autohide -n -t bool -s true 
 xfconf-query -c xfce4-panel -p /panels/panel-1/length -n -t int -s 100
-
-# xfconf-query -c xfce4-panal -p /panels/panel-1/plugin-ids -n -s 1 -s 3 -s 15 -s 4 -s 5 -s 7 
-# if this does not work (array is appended but not destroyed+repopulated) try the following:
-## xfconf-query -c xfce4-panel -p /panels/panel-<PANELID>/plugin-ids
-## xfconf-query -c xfce4-panel -p /plugins/plugin-<PLUGINID> -r
-## xfce4-panel -r
-## xfconf-query -c xfce4-panel -p /panels/panel-1/plugin-ids
 
 xfconf-query -c xfce4-panel -p /panels/panel-1/position -n -t string -s "p=6;x=0;y=0"
 xfconf-query -c xfce4-panel -p /panels/panel-1/position-locked -n -t bool -s true
@@ -49,7 +42,7 @@ xfconf-query -c xfwm4 -p /general/cycle_workspaces -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/mousewheel_rollup -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/stroll_workspaces -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/theme -n -t string -s "Numix"
-xfconf-query -c xfwm4 -p /general/title_alignment -n -t string -s center
+xfconf-query -c xfwm4 -p /general/title_alignment -n -t string -s "center"
 xfconf-query -c xfwm4 -p /general/title_font -n -t string -s "Ubuntu 10"
 xfconf-query -c xfwm4 -p /general/workspace_count -n -t int -s 4
 xfconf-query -c xfwm4 -p /general/use_compositing -n -t bool -s true
