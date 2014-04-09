@@ -1,11 +1,16 @@
 Crouton-Config
 ==============
 
-Crouton-Config contains scripts for configuring a new crouton install.
+Crouton-Config contains scripts for configuring a new Ubuntu 14.04 XFCE based crouton install on a chromebook.
 
-* Does not include dotfiles.
-* Installed applications based on ARM for S3 Chromebook.
-* Replaces the obsolete s3dotfiles repository.
+* No dotfiles (provide your own).
+* Enables ZSH with OH-MY-ZSH..
+* Installs command line and gui applications.
+* Sets Numix window theme.
+* Sets Solarized Dark terminal theme.
+* Sets Faneza icon theme.
+* Configures XFCE environment panels and settings.
+* Tested on Samsung S3 Chromebobk with ARM processor.
 
 Requirements
 ------------
@@ -17,10 +22,10 @@ Requirements
 Steps
 -----
 
-### 1. Install Crouton with 13.10 and XFCE
+### 1. Install Crouton with Ubuntu 14.04 and XFCE
 
 * [https://github.com/dnschneid/crouton](https://github.com/dnschneid/crouton)
-* `sudo sh -e ~/Downloads/crouton -r saucy -t xfce`
+* `sudo sh -e ~/Downloads/crouton -r trusty -t xfce`
 
 ### 2. Clone this github project into $HOME/dotfiles:
 
