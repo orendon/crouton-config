@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 ## This script will install core applications
 
-### Fixing potential add-apt-repository errors
+### Fix potential add-apt-repository errors
 sudo apt-get update
 sudo apt-get -y upgrade
 sudo apt-get install -y python-software-properties
@@ -46,18 +46,18 @@ sudo apt-get install -y whois
 sudo apt-get install -y xsel
 sudo apt-get install -y youtube-dl
 
-### Install small gui applications
+### Install gui applications
+# sudo apt-get install -y calibre
 # sudo apt-get install -y chromium-browser
 # sudo apt-get install -y deluge
 # sudo apt-get install -y gedit
-# sudo apt-get install -y keepassx
-
-### Install large gui applications
 # sudo apt-get install -y gimp
 # sudo apt-get install -y inkscape
+# sudo apt-get install -y keepassx
 # sudo apt-get install -y libreoffice
+# sudo apt-get install -y zathura
 
-### Oh-My-ZSH
+### Install Oh-My-ZSH
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 source ~/.zshrc
 
