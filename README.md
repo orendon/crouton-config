@@ -37,6 +37,7 @@ Steps
 
 * `./01-setup-core.sh`
 * Log out and back in to enable zsh
-* `./02-setup-apps.sh`
-* `./03-setup-xfcetheme.sh`
+* `./02-setup-apps-cli.sh`
+* `./03-setup-apps-gui.sh`
+* `./04-setup-xfcetheme.sh`
 
