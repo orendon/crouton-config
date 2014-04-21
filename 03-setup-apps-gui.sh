@@ -15,6 +15,9 @@ sudo apt-get install -y gimp
 sudo apt-get install -y inkscape
 sudo apt-get install -y keepassx
 sudo apt-get install -y libreoffice
+sudo apt-get install -y liferea
+sudo apt-get install -y typecatcher
+sudo apt-get install -y vim-gtk
 sudo apt-get install -y zathura
 
 ### Goodbye
