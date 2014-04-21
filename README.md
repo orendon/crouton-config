@@ -10,6 +10,7 @@ Crouton-Config contains scripts for configuring a new Ubuntu 14.04 XFCE based cr
 * Sets Solarized Dark terminal theme.
 * Sets Faneza icon theme.
 * Configures XFCE environment panels and settings.
+* Installs the Ubuntu Font Family (and sets it for terminal and gui use)
 * Tested on Samsung S3 Chromebobk with ARM processor.
 
 Requirements
@@ -37,6 +38,5 @@ Steps
 * `./01-setup-core.sh`
 * Log out and back in to enable zsh
 * `./02-setup-apps.sh`
-* `./03-setup-theme.sh`
-* `./04-setup-xfce.sh`
+* `./03-setup-xfcetheme.sh`
 
