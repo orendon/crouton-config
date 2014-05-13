@@ -26,7 +26,7 @@ Steps
 ### 1. Install Crouton with Ubuntu 14.04 and XFCE
 
 * [https://github.com/dnschneid/crouton](https://github.com/dnschneid/crouton)
-* `sudo sh -e ~/Downloads/crouton -r trusty -t xfce`
+* `sudo sh -e ~/Downloads/crouton -r trusty -t xfce,keyboard`
 
 ### 2. Clone this github project into $HOME/dotfiles:
 
