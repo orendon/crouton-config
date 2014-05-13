@@ -11,7 +11,7 @@ Crouton-Config contains scripts for configuring a new Ubuntu 14.04 XFCE based cr
 * Sets Faneza icon theme.
 * Configures XFCE environment panels and settings.
 * Installs the Ubuntu Font Family (and sets it for terminal and gui use)
-* Tested on Samsung S3 Chromebobk with ARM processor.
+* Tested on Samsung S3 Chromebook with ARM processor.
 
 Requirements
 ------------
@@ -28,7 +28,7 @@ Steps
 * [https://github.com/dnschneid/crouton](https://github.com/dnschneid/crouton)
 * `sudo sh -e ~/Downloads/crouton -r trusty -t xfce,keyboard`
 
-### 2. Clone this github project into $HOME/dotfiles:
+### 2. Clone this github project into $HOME/crouton-config:
 
 * `sudo apt-get install -y git`
 * `git clone https://github.com/aaronhalford/crouton-config`
